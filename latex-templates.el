@@ -65,6 +65,9 @@
           (insert-file-contents (concat dir arg))
           (return-from inserting-template))))))
 
+
 ;; (add-hook 'latex-mode-hook 'insert-latex-template)
 
 (provide 'latex-templates)
+
+;;; latex-templates.el ends here
