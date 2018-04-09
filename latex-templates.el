@@ -40,7 +40,7 @@
   :group 'latex-templates
   )
 
-(defvar latex-templates-private nil
+(defcustom latex-templates-private nil
   "User's latex-templates custom templates directory."
   :type '(repeat (directory :format "%v"))
   :group 'latex-templates
