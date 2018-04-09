@@ -61,7 +61,7 @@
         (when (and
                (file-directory-p dir)
                (file-exists-p (concat dir arg)))
-          (insert-file-contents (concat dir arg))
+          (insert-file (concat dir arg))
           (return-from inserting-template))))))
 
 
