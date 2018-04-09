@@ -60,8 +60,7 @@
       (dolist (dir (append latex-templates-private latex-templates-global))
         (when (and
                (file-directory-p dir)
-               (file-exists-p (concat dir arg))
-               (= (point-max) (point-min)))
+               (file-exists-p (concat dir arg)))
           (insert-file-contents (concat dir arg))
           (return-from inserting-template))))))
 
